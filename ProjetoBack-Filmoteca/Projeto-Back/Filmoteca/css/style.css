@@ -1,0 +1,221 @@
+/* style.css - Tema claro para Minha Watchlist Inteligente */
+
+body {
+    background: #f7f7fa;
+    color: #222;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, nav {
+    background: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 16px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+}
+
+.container {
+    max-width: 900px;
+    margin: 32px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    padding: 32px 24px;
+}
+
+h1, h2, h3 {
+    color: #2a3a5e;
+    margin-top: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 24px;
+}
+table th, table td {
+    padding: 12px 8px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: left;
+}
+table th {
+    background: #f0f4fa;
+    color: #2a3a5e;
+}
+
+a {
+    color: #2a7ae2;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+a:hover {
+    color: #174ea6;
+    text-decoration: underline;
+}
+
+button, .btn {
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+input, select, textarea {
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    margin-bottom: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+input:focus, select:focus, textarea:focus {
+    border-color: #2563eb;
+    outline: none;
+    box-shadow: 0 0 0 2px #2563eb33;
+}
+
+/* Mensagens de erro e sucesso */
+.alert-error {
+    color: #b91c1c;
+    background: #fee2e2;
+    border: 1px solid #fecaca;
+    border-radius: 6px;
+    padding: 10px 16px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.alert-success {
+    color: #166534;
+    background: #dcfce7;
+    border: 1px solid #bbf7d0;
+    border-radius: 6px;
+    padding: 10px 16px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+/* Estilo para área de filtros da watchlist - versão mais clean e com !important */
+.filtros-watchlist {
+    background: #f8fafc !important;
+    border-radius: 14px !important;
+    box-shadow: 0 4px 24px 0 rgba(37, 99, 235, 0.07) !important;
+    padding: 18px 20px !important;
+    margin-bottom: 32px !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 18px 28px !important;
+    align-items: flex-end !important;
+    border: 1.5px solid #e0e7ef !important;
+    position: relative;
+}
+.filtros-watchlist label {
+    font-weight: 600 !important;
+    color: #2563eb !important;
+    margin-bottom: 6px !important;
+    font-size: 1.01em !important;
+    letter-spacing: 0.01em;
+}
+.filtros-watchlist > div {
+    display: flex !important;
+    flex-direction: column !important;
+    min-width: 140px !important;
+}
+.filtros-watchlist input,
+.filtros-watchlist select {
+    min-width: 140px !important;
+    max-width: 200px !important;
+    padding: 9px 14px !important;
+    font-size: 1em !important;
+    border-radius: 8px !important;
+    border: 1.5px solid #d1d5db !important;
+    background: #fff !important;
+    margin-bottom: 0 !important;
+    color: #222 !important;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 1px 2px 0 rgba(37,99,235,0.03);
+}
+.filtros-watchlist input:focus,
+.filtros-watchlist select:focus {
+    border-color: #2563eb !important;
+    box-shadow: 0 0 0 2px #2563eb22 !important;
+    outline: none !important;
+}
+.filtros-watchlist .btn-filtrar {
+    background: linear-gradient(90deg, #2563eb 60%, #1e40af 100%) !important;
+    color: #fff !important;
+    font-weight: 700 !important;
+    border-radius: 8px !important;
+    padding: 10px 26px !important;
+    font-size: 1em !important;
+    border: none !important;
+    box-shadow: 0 2px 8px 0 rgba(37,99,235,0.10);
+    letter-spacing: 0.02em;
+    transition: background 0.2s, box-shadow 0.2s;
+    margin-right: 0 !important;
+}
+.filtros-watchlist .btn-filtrar:hover {
+    background: linear-gradient(90deg, #1e40af 60%, #2563eb 100%) !important;
+    box-shadow: 0 4px 16px 0 rgba(37,99,235,0.13);
+}
+.filtros-watchlist .btn-limpar {
+    background: #f1f5f9 !important;
+    color: #2563eb !important;
+    font-weight: 600 !important;
+    border-radius: 8px !important;
+    padding: 10px 22px !important;
+    font-size: 1em !important;
+    border: 1.5px solid #e0e7ef !important;
+    margin-left: 0 !important;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.filtros-watchlist .btn-limpar:hover {
+    background: #e0e7ef !important;
+    color: #1e40af !important;
+    border-color: #2563eb !important;
+}
+/* Espaçamento entre botões de filtrar e limpar - correção */
+.filtros-watchlist > div:last-child {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 14px !important;
+    align-items: center !important;
+}
+@media (max-width: 800px) {
+    .filtros-watchlist {
+        flex-direction: column !important;
+        gap: 10px !important;
+        padding: 12px 6px !important;
+    }
+    .filtros-watchlist input,
+    .filtros-watchlist select {
+        min-width: 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+/* Responsividade extra */
+@media (max-width: 600px) {
+    .container, .max-w-3xl, .max-w-lg, .max-w-md, .max-w-2xl {
+        padding: 16px 4px !important;
+    }
+    table th, table td {
+        padding: 8px 4px;
+    }
+}
+
+/* Pequenos ajustes para integração com Tailwind */
+.bg-white {
+    background: #fff !important;
+}
+.rounded-xl {
+    border-radius: 12px !important;
+}
+.shadow-lg {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08) !important;
+}
